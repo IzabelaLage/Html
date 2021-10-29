@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <center>
+    <p><font size="10" face="arial, sans-serif">Biblioteca</font></p>
+    <p><font size="5" face="georgina, sefif"  color="#FF0000">Cadastro
+    </font></p>
+    </center>
+    <p><font size="4" face="georgina, sefif"></p>
+	<head>
+    <fieldset>
+        <legend>Dados</legend>
+        </form>
+	 <form name="trabalho" action="tra.jsp" method="post">
+	 <p>
+	  <label> Nome: <input type="text" name="pnome" required>
+	  </label>
+	 </p>
+	 <p>
+	  <label>
+		Telefone: <input type="tel" placeholder="(xx)xxxxx-xxxx" pattern="(?\d{2}\d{4}[-\s]\d{4}.*?$">
+	  </label>
+	 </p>	
+	<p>
+	    <label> Email: <input type="email">
+	 </label>
+	</p>
+	<p>
+	 <label>
+	  Data de nascimento:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	<p>
+	 <label>
+	  CPF:
+	<input type="text" placeholder="XXX.XXX.XXX-XX" pattern"^\d{3}\.\d{3}\.\d{3}-\d{2}$" name="cpf" required>
+	 </label>
+	</p>
+	<p>
+	 <label>
+	  Endereço: <input type="text" name="endereco" tabindex"2">
+	 </label>
+	</p>
+	<p>
+	 <label>
+	  Estado:
+	  <input list="estados">
+	  <datalist id="estados">
+		<option value="ac">Acre</option> 
+		<option value="al">Alagoas</option> 
+		<option value="am">Amazonas</option> 
+		<option value="ap">Amapá</option> 
+		<option value="ba">Bahia</option> 
+		<option value="ce">Ceará</option> 
+		<option value="df">Distrito Federal</option> 
+		<option value="es">Espírito Santo</option> 
+		<option value="go">Goiás</option> 
+		<option value="ma">Maranhão</option> 
+		<option value="mt">Mato Grosso</option> 
+		<option value="ms">Mato Grosso do Sul</option> 
+		<option value="mg">Minas Gerais</option> 
+		<option value="pa">Pará</option> 
+		<option value="pb">Paraíba</option> 
+		<option value="pr">Paraná</option> 
+		<option value="pe">Pernambuco</option> 
+		<option value="pi">Piauí</option> 
+		<option value="rj">Rio de Janeiro</option> 
+		<option value="rn">Rio Grande do Norte</option> 
+		<option value="ro">Rondônia</option> 
+		<option value="rs">Rio Grande do Sul</option> 
+		<option value="rr">Roraima</option> 
+		<option value="sc">Santa Catarina</option> 
+		<option value="se">Sergipe</option> 
+		<option value="sp">São Paulo</option> 
+		<option value="to">Tocantins</option> 
+	      </option>
+	  </datalist>
+ 	 </label>
+	</p>
+	<form>
+	    <p>
+	        <label>
+	            Cidade: <input type="text" name="cidade">
+	        </label>
+	    </p>
+	</form>
+	<fieldset>
+	    <legend> Categoria do Leitor</legend>
+	    <p>
+	        <label>
+	            <input type="radio" name="cat_do_lei" value="Aluno de graduação"> Aluno de graduação
+	        </label>
+	    </p>
+	     <p>
+	        <label>
+	            <input type="radio" name="cat_do_lei" value="Aluno de pós-graduação"> Aluno de pós-graduação
+	        </label>
+	    </p>
+	    <p>
+	        <label>
+	            <input type="radio" name="cat_do_lei" value="Professor"> Professor
+	        </label>
+	    </p>
+	    <p>
+	        <label>
+	            <input type="radio" name="cat_do_lei" value="Funcionário"> Funcionário
+	        </label>
+	    </p>
+	    <p>
+	        <label>
+	            <input type="radio" name="cat_do_lei" value="Usuário Externo"> Usuário Externo
+	        </label>
+	    </p>
+	    <p>
+	        <label>
+	            Codigo do leitor: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	    <p>
+	        <label>
+	            Descrição da Categoria:<br>
+	            <textarea cols="30" row="5"></textarea>
+	        </label>
+	    </p>
+	    <p>
+	 <label>
+	  Dias de emprestimo:
+	  <input list="Dias">
+	  <datalist id="Dias">
+		<option>1 Dia</option>
+		<option>2 Dias</option>
+		<option>3 Dias</option>
+		<option>4 Dias</option>
+		<optio>5 Dias</option>
+		<option>6 Dias</option>
+		<option>7 Dias</option>
+		<option>9 Dias</option>
+		<option>10 Dias</option>
+		<option>11 Dias</option>
+		<option>12 Dias</option>
+		<option>13 Dias</option>
+		<option>14 Dias</option>
+		<option>15 Dias</option>
+		<option>16 Dias</option>
+		<option>17 Dias</option>
+		<option>18 Dias</option>
+		<option>19 Dias</option>
+		<option>20 Dias</option>
+		</label>
+		</p>
+	</fieldset>
+		<fieldset>
+	    <legend> Categoria Das Obras Literárias</legend>
+	<p>
+	 <label>
+	  Obras literárias:
+	  <input list="Obras">
+	  <datalist id="Obras">
+		<option>Livro</option
+		<option>Periódico</option>
+		<option>Revista</option>
+		<option>Nota didática</option>
+		<optio>jornal</option>
+		<option>Relatório técnico</option>
+		<option>Dissertação de mestrado</option>
+		<option>Tese de doutorado</option>
+		</label>
+		</p>
+		<p>
+	        <label>
+	            Codigo da Obra: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	    	<p>
+	 <label>
+	  Dias de emprestimo:
+	  <input list="Dias">
+	  <datalist id="Dias">
+		<option>1 Dia</option>
+		<option>2 Dias</option>
+		<option>3 Dias</option>
+		<option>4 Dias</option>
+		<optio>5 Dias</option>
+		<option>6 Dias</option>
+		<option>7 Dias</option>
+		<option>9 Dias</option>
+		<option>10 Dias</option>
+		<option>11 Dias</option>
+		<option>12 Dias</option>
+		<option>13 Dias</option>
+		<option>14 Dias</option>
+		<option>15 Dias</option>
+		<option>16 Dias</option>
+		<option>17 Dias</option>
+		<option>18 Dias</option>
+		<option>19 Dias</option>
+		<option>20 Dias</option>
+		</label>
+		</p>
+		<head>
+		    <script type="text/javascript">
+		        function calcular(){
+		            a=document.getElementById("valor1").value;
+		            b=document.getElementById("valor2").value;
+		            document.getElementById("resultado").value=Number(a)*Number(b);
+		        }
+		    </script>
+		</head>
+		<body>
+		<p> Taxa por Diaria de multa</p>
+		<form onsubmit="return false">
+		    Dias <input id="valor1"> * Multa <input id="valor2"> = <output id="resultado" onforminput="calcular()"></output>
+		</form>
+		</head>
+		</body>
+		<fieldset>
+	    <legend>Obras Literárias</legend>
+	    <form>
+		    <p>
+		        <label>
+		            Titulo da Obra: <input>
+		        </label>
+		    </p>
+		</form>
+		<form>
+		    <p>
+		        <label>
+		            Autor: <input>
+		        </label>
+		    </p>
+		</form>
+		<form>
+		    <p>
+		        <label>
+		            Palavras-Chave: <input>
+		        </label>
+		    </p>
+		</form>
+		<p>
+		    <label>
+		        Data da publicação:
+		        <input type="date" name="data">
+		    </label>
+		</p>
+		<p>
+		    <label>
+		        Numero de edição:<input type="number" name="numero" min="0" max="1000">
+		    </label>
+		</p>
+			<form>
+		    <p>
+		        <label>
+		            Editora: <input>
+		        </label>
+		    </p>
+		</form>
+			<p>
+		    <label>
+		        Numero de Paginas:<input type="number" name="numero" min="0" max="1000">
+		    </label>
+		</p>
+		</fieldset>
+		<form action="dados.aps" method="post">
+		    <p>
+		        <label>
+		            Funcionario: <input type="text" name="funcionario">
+		        </label>
+		    </p>
+		    <fieldset name="dadosdofuncionario" disabled>
+		        <legend>
+		            <label>
+		                <input type="checkbox" name="dados" onchange="form.dadosdofuncionario.disabled = !checked">
+		                Dados do Funcionario
+		            </label>
+		        </legend>
+		        <p>
+		            <label>
+		                Nome: <input required>
+		            </label>
+		        </p>
+		         <p>
+	  <label>
+		Telefone: <input type="tel" placeholder="(xx)xxxxx-xxxx" pattern="(?\d{2}\d{4}[-\s]\d{4}.*?$">
+	  </label>
+	 </p>	
+	<p>
+	    <label> Email: <input type="email">
+	 </label>
+	</p>
+	<p>
+	 <label>
+	  Data de nascimento:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	<p>
+	 <label>
+	  CPF:
+	<input type="text" placeholder="XXX.XXX.XXX-XX" pattern"^\d{3}\.\d{3}\.\d{3}-\d{2}$" name="cpf" required>
+	 </label>
+	</p>
+	<p>
+	 <label>
+	  Endereço: <input type="text" name="endereco" tabindex"2">
+	 </label>
+	</p>
+	<p>
+	 <label>
+	  Estado:
+	  <input list="estados">
+	  <datalist id="estados">
+		<option value="ac">Acre</option> 
+		<option value="al">Alagoas</option> 
+		<option value="am">Amazonas</option> 
+		<option value="ap">Amapá</option> 
+		<option value="ba">Bahia</option> 
+		<option value="ce">Ceará</option> 
+		<option value="df">Distrito Federal</option> 
+		<option value="es">Espírito Santo</option> 
+		<option value="go">Goiás</option> 
+		<option value="ma">Maranhão</option> 
+		<option value="mt">Mato Grosso</option> 
+		<option value="ms">Mato Grosso do Sul</option> 
+		<option value="mg">Minas Gerais</option> 
+		<option value="pa">Pará</option> 
+		<option value="pb">Paraíba</option> 
+		<option value="pr">Paraná</option> 
+		<option value="pe">Pernambuco</option> 
+		<option value="pi">Piauí</option> 
+		<option value="rj">Rio de Janeiro</option> 
+		<option value="rn">Rio Grande do Norte</option> 
+		<option value="ro">Rondônia</option> 
+		<option value="rs">Rio Grande do Sul</option> 
+		<option value="rr">Roraima</option> 
+		<option value="sc">Santa Catarina</option> 
+		<option value="se">Sergipe</option> 
+		<option value="sp">São Paulo</option> 
+		<option value="to">Tocantins</option> 
+	      </option>
+	  </datalist>
+ 	 </label>
+	</p>
+	<form>
+	    <p>
+	        <label>
+	            Cidade: <input type="text" name="cidade">
+	        </label>
+	    </p>
+	</form>
+		    </fieldset>
+		    <form action="dados.aps" method="post">
+		    <p>
+		        <label>
+		           Reserva<input type="checkbox" name="dados" onchange="form.dadosdofuncionario.disabled = !checked">
+		        </label>
+		    </p>
+		    <fieldset name="dadosdofuncionario" disabled>
+		        <legend>
+		            <label>
+		                Dados da Reserva
+		            </label>
+		        </legend>
+	    <p>
+	 <label>
+	  Data da reserva:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	<p>
+	 <label>
+	  Data para retirada da obra:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	<p>
+	 <label>
+	  Data da devolução:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	 <p>
+	        <label>
+	            Codigo do leitor: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	    	<p>
+	        <label>
+	            Codigo da Obra: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	     <p>
+		            <label>
+		                Funcionario responsável: <input required>
+		            </label>
+		        </p>
+	    </fieldset>
+	      <form action="dados.aps" method="post">
+		    <p>
+		        <label>
+		           Empréstimo<input type="checkbox" name="dados" onchange="form.dadosdoemprestimo.disabled = !checked">
+		        </label>
+		    </p>
+		    <fieldset name="dadosdoemprestimo" disabled>
+		        <legend>
+		            <label>
+		                Dados do emprestimo
+		            </label>
+		        </legend>
+	     <p>
+	 <label>
+	  Data do empréstimo:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	<p>
+	 <label>
+	  Data da devolução:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	 <p>
+	        <label>
+	            Codigo do leitor: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	    	<p>
+	        <label>
+	            Codigo da Obra: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	     <p>
+		            <label>
+		                Funcionario responsável: <input required>
+		            </label>
+		        </p>
+	    </fieldset>
+		</form>
+		<form action="dados.aps" method="post">
+		    <p>
+		        <label>
+		           Devolução<input type="checkbox" name="dados" onchange="form.dadosdadevolução.disabled = !checked">
+		        </label>
+		    </p>
+		    <fieldset name="dadosdadevolução" disabled>
+		        <legend>
+		            <label>
+		                Dados da devolução
+		            </label>
+		        </legend>
+	<p>
+	 <label>
+	  Data da devolução:
+		<input type="date" name="data">
+	  </label>
+	</p>
+	 <p>
+	        <label>
+	            Codigo do leitor: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	    	<p>
+	        <label>
+	            Codigo da Obra: <input type="text" name="codigo" size="10">
+	        </label>
+	    </p>
+	    </fieldset>
+		</form>
+	<p>
+	 <input type="submit" value="Cadastrar">
+	 <input type="submit" value="Limpar">
+	 <input type="submit" value="Validar Nome" onClick="validar();">
+	</p>
+	</form>
+    	</body>
+     </fieldset>
+<html>
